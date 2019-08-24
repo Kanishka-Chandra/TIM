@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18b1d821-dc92-4cc9-82f4-e98758215324" name="Default" comment="" />
+    <list default="true" id="18b1d821-dc92-4cc9-82f4-e98758215324" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DesktopBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DesktopBot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contribute.md" beforeDir="false" afterPath="$PROJECT_DIR$/Contribute.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control.py" beforeDir="false" afterPath="$PROJECT_DIR$/Control.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,19 +22,29 @@
       <file leaf-file-name="Control.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="195" column="35" lean-forward="true" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="35" />
+            <state relative-caret-position="2482">
+              <caret line="146" column="31" lean-forward="true" selection-start-line="146" selection-start-column="31" selection-end-line="146" selection-end-column="31" />
               <folding>
-                <element signature="e#274#510#0" />
-                <element signature="e#533#572#0" />
-                <element signature="e#601#697#0" />
-                <element signature="e#722#1427#0" />
-                <element signature="e#1447#1505#0" />
-                <element signature="e#2193#2575#0" />
-                <element signature="e#2527#2857#0" />
-                <element signature="e#2985#3778#0" />
-                <element signature="e#3914#4492#0" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contribute.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contribute.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,11 +64,15 @@
       <find>join</find>
       <find>Process</find>
       <find>or</find>
+      <find>process</find>
     </findStrings>
     <replaceStrings>
       <replace>terminate</replace>
       <replace>process</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,6 +81,8 @@
         <option value="$PROJECT_DIR$/venv/Test.py" />
         <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Control.py" />
+        <option value="$PROJECT_DIR$/Contribute.md" />
+        <option value="$PROJECT_DIR$/Requirements.txt" />
       </list>
     </option>
   </component>
@@ -68,6 +92,7 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -78,14 +103,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="DesktopBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DesktopBot" type="462c0819:PsiDirectoryNode" />
+              <item name="TIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TIM" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.Control">
     <configuration name="Control" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DesktopBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,8 +176,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test" />
         <item itemvalue="Python.Control" />
+        <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -168,16 +197,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1398243" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990461" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -198,18 +227,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Control.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Control.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="134" column="30" lean-forward="true" selection-start-line="134" selection-start-column="30" selection-end-line="134" selection-end-column="30" />
           <folding>
-            <element signature="e#274#510#0" />
-            <element signature="e#533#572#0" />
-            <element signature="e#601#697#0" />
-            <element signature="e#722#1427#0" />
-            <element signature="e#1447#1505#0" />
-            <element signature="e#2193#2575#0" />
-            <element signature="e#2527#2857#0" />
-            <element signature="e#2985#3778#0" />
-            <element signature="e#3914#4492#0" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -219,15 +250,7 @@
         <state relative-caret-position="391">
           <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
-            <element signature="e#274#510#0" />
-            <element signature="e#533#572#0" />
-            <element signature="e#601#697#0" />
-            <element signature="e#722#1427#0" />
-            <element signature="e#1447#1505#0" />
-            <element signature="e#2193#2575#0" />
-            <element signature="e#2527#2857#0" />
-            <element signature="e#2985#3778#0" />
-            <element signature="e#3914#4492#0" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -244,15 +267,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
-            <element signature="e#274#510#0" />
-            <element signature="e#533#572#0" />
-            <element signature="e#601#697#0" />
-            <element signature="e#722#1427#0" />
-            <element signature="e#1447#1505#0" />
-            <element signature="e#2193#2575#0" />
-            <element signature="e#2527#2857#0" />
-            <element signature="e#2985#3778#0" />
-            <element signature="e#3914#4492#0" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -269,15 +284,7 @@
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="28" />
           <folding>
-            <element signature="e#274#510#0" />
-            <element signature="e#533#572#0" />
-            <element signature="e#601#697#0" />
-            <element signature="e#722#1427#0" />
-            <element signature="e#1447#1505#0" />
-            <element signature="e#2193#2575#0" />
-            <element signature="e#2527#2857#0" />
-            <element signature="e#2985#3778#0" />
-            <element signature="e#3914#4492#0" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -341,25 +348,37 @@
     <entry file="file://$PROJECT_DIR$/Test.ipynb" />
     <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="910">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contribute.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Control.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="195" column="35" lean-forward="true" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="35" />
+        <state relative-caret-position="2482">
+          <caret line="146" column="31" lean-forward="true" selection-start-line="146" selection-start-column="31" selection-end-line="146" selection-end-column="31" />
           <folding>
-            <element signature="e#274#510#0" />
-            <element signature="e#533#572#0" />
-            <element signature="e#601#697#0" />
-            <element signature="e#722#1427#0" />
-            <element signature="e#1447#1505#0" />
-            <element signature="e#2193#2575#0" />
-            <element signature="e#2527#2857#0" />
-            <element signature="e#2985#3778#0" />
-            <element signature="e#3914#4492#0" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

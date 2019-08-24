@@ -13,6 +13,6 @@ Keyboard functions
 Speech to text typing
 
 Known Issues:
-None
+Mouse does not stop after starting to move
 
 Please update contribute.md as and when required.

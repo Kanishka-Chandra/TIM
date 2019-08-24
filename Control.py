@@ -9,7 +9,7 @@ screenWidthMax, screenHeightMax = auto.size()
 action = ""
 
 engine = pyttsx3.init()
-count = 0
+c = 0
 # Dummy function marks the starting of the program
 
 
@@ -23,12 +23,6 @@ def start():
     engine.say('I am online sir \n and')
 
 
-if count == 0:
-
-    start()
-    global count
-    count += 1
-
 
 def talkToMe(audio):
 
@@ -40,6 +34,7 @@ def talkToMe(audio):
 
 
 def myCommand():
+    print("KK")
 
     #listens for commands
 
@@ -53,7 +48,7 @@ def myCommand():
 
     try:
         command = r.recognize_google(audio).lower()
-        print("Yo   u said: " + command + "\n")
+        print("You said: " + command + "\n")
         engine.say(command)
         engine.runAndWait()
 
@@ -89,6 +84,8 @@ def move(X, Y):
         if "stop" in action:
             print("limit")
             process.terminate()
+            X = 0
+            Y = 0
             return
         if posX == screenWidthMax or posX == 0:
             print("limit")
@@ -196,9 +193,9 @@ def assistant(command):
         auto.mouseUp(button="left")
 
 
-talkToMe('I am ready for your command')
-
 #loop to continue executing multiple commands
 if __name__ == "__main__":
+    start()
+    talkToMe('I am ready for your command')
     while True:
         assistant(myCommand())

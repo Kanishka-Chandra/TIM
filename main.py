@@ -5,69 +5,57 @@ import speech_recognition as sr
 from nltk.tokenize import word_tokenize
 
 
+engine = pyttsx3.init()
 screenWidthMax, screenHeightMax = auto.size()
+
 action = ""
 
-engine = pyttsx3.init()
-c = 0
-# Dummy function marks the starting of the program
-
-
-def start():
-
-    engine.say('Hello Sir!')
-    engine.say('installing all drivers')
-    engine.say('Starting all system applications')
-    engine.say('Drivers installed')
-    engine.say('All systems have started')
-    engine.say('I am online sir \n and')
-
-
-
+#Function to make the system to speek
+#speaks audio passed as argument
 def talkToMe(audio):
-
-    #speaks audio passed as argument
-
     engine.say(audio)
     engine.runAndWait()
     print(audio)
 
 
-def myCommand():
-    print("KK")
+#Greating the user
+def start():
+    talkToMe('Hello Sir! \n All systems have started \n I am online sir and I am ready for your command!')
+    ConfigureSpeechRecognition()
 
-    #listens for commands
+#Configuring speech recognition
+def ConfigureSpeechRecognition():
+    speechRecognizer = sr.Recognizer()
+    with sr.Microphone() as source:
+        speechRecognizer.pause_threshold = 1
+        speechRecognizer.adjust_for_ambient_noise(source, duration=1)
 
-    r = sr.Recognizer()
+
+#listens for users command
+def userCommand():
 
     with sr.Microphone() as source:
-        print('Ready...')
-        r.pause_threshold = 1
-        r.adjust_for_ambient_noise(source, duration=1)
-        audio = r.listen(source)
+        audio = speechRecognizer.listen(source)
 
     try:
-        command = r.recognize_google(audio).lower()
+        command = speechRecognizer.recognize_google(audio).lower()
         print("You said: " + command + "\n")
-        engine.say(command)
-        engine.runAndWait()
+        talkToMe(command)
 
-    #loop back to continue to listen for commands if unrecognizable speech is received
     except sr.UnknownValueError:
         print("Your last command couldn\'t be heard")
-        engine.say("Your last command couldn\'t be heard")
-        engine.runAndWait()
-        command = myCommand()
+        talkToMe("Your last command couldn\'t be heard")
+        #loop back to continue to listen for commands if unrecognizable speech is received
+        command = userCommand()
 
     return command
 
 
 def check():
-    global action
 
     while True:
 
-        action = myCommand()
+        action = userCommand()
 
 
 process = Process(target=check)
@@ -77,9 +65,8 @@ def move(X, Y):
 
     while True:
 
-        posX, posY = auto.position()
+        mousePositionX, mousePositionY = auto.position()
         auto.moveRel(X, Y)
-        global action
 
         if "stop" in action:
             print("limit")
@@ -87,11 +74,11 @@ def move(X, Y):
             X = 0
             Y = 0
             return
-        if posX == screenWidthMax or posX == 0:
+        if mousePositionX == screenWidthMax or mousePositionX == 0:
             print("limit")
             process.terminate()
             return
-        if posY == screenHeightMax or posY == 0:
+        if mousePositionY == screenHeightMax or mousePositionY == 0:
             print("limit")
             process.terminate()
             return
@@ -99,8 +86,6 @@ def move(X, Y):
 
 def assistant(command):
     """if statements for executing commands"""
-
-    global action
 
     if "move" in command:
 
@@ -192,10 +177,12 @@ def assistant(command):
     elif "drop" in command:
         auto.mouseUp(button="left")
 
-
+#Execution starts here
 #loop to continue executing multiple commands
+
 if __name__ == "__main__":
     start()
-    talkToMe('I am ready for your command')
+
     while True:
-        assistant(myCommand())
+        command = userCommand()
+        assistant(command)

@@ -1,18 +1,18 @@
-Language Used: 
+#Language Used: 
 Python 3.6
 
-Packages Used:
-Requirements.txt
+#Packages Used:
+[Requirements](https://github.com/Kanishka-Chandra/TIM/blob/master/Requirements.txt)
 
-Current Features:
+#Current Features:
 Controls mouse movements
 
-TODO:
+#TODO:
 Mouse button functions 
 Keyboard functions
 Speech to text typing
 
-Known Issues:
+#Known Issues:
 Mouse does not stop after starting to move
 
-Please update contribute.md as and when required.
+Please update [contribute](https://github.com/Kanishka-Chandra/TIM/blob/master/Contribute.md) as and when required.
